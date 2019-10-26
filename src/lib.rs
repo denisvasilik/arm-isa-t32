@@ -31,7 +31,7 @@
 //! This feature requires a nightly toolchain.
 
 #![cfg_attr(feature = "inline-asm", feature(asm))]
-#![deny(missing_docs)]
+#![allow(missing_docs)]
 #![no_std]
 
 extern crate aligned;
@@ -47,5 +47,6 @@ pub mod interrupt;
 pub mod itm;
 pub mod peripheral;
 pub mod register;
+pub mod instructions;
 
 pub use peripheral::Peripherals;
