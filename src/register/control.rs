@@ -113,7 +113,7 @@ pub fn read() -> Control {
                 #[cfg(feature = "inline-asm")]
                 () => {
                     let r: u32;
-                    unsafe { asm!("mrs $0, CONTROL" : "=r"(r) ::: "volatile") }
+                    unsafe { llvm_asm!("mrs $0, CONTROL" : "=r"(r) ::: "volatile") }
                     r
                 }
 
