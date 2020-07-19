@@ -30,7 +30,7 @@
 //!
 //! This feature requires a nightly toolchain.
 
-#![cfg_attr(feature = "inline-asm", feature(asm))]
+#![cfg_attr(feature = "inline-asm", feature(llvm_asm))]
 #![allow(missing_docs)]
 #![no_std]
 
